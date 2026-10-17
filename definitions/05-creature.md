@@ -5,7 +5,7 @@ name: Creature
 group: Constitution
 status: drafted
 built_from: [4, 1]
-bonds: [4, 6, 19, 21, 22]
+bonds: [4, 6, 23, 25, 26]
 ---
 
 # 5 · Creature
@@ -32,7 +32,7 @@ Remember that the person before you is a creature, not a self-made atom and not 
 
 ## Bonds with
 
-4 Person · 6 Dignity · 19 Vocation · 21 Destiny · 22 Mystery
+4 Person · 6 Dignity · 23 Vocation · 25 Destiny · 26 Mystery
 
 ## Sources
 

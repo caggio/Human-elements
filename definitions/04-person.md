@@ -5,13 +5,13 @@ name: Person
 group: Constitution
 status: drafted
 built_from: [1, 2, 3]
-forward_reference: 12 Reason
-bonds: [5, 6, 7, 8, 12, 14, 16]
+forward_reference: 16 Reason
+bonds: [5, 6, 7, 8, 16, 18, 20]
 ---
 
 # 4 · Person
 
-*Built from: 1 Nature · 2 Substance · 3 Individual · (12 Reason, forward reference)*
+*Built from: 1 Nature · 2 Substance · 3 Individual · (16 Reason, forward reference)*
 
 ## Definition
 
@@ -21,13 +21,13 @@ A person is an individual substance of a rational nature: a someone, not a somet
 
 - **Individual (3)** — there is no person in general. Boethius's definition, “the individual substance of a rational nature,” applies only to this one and that one, never to the kind as such.
 - **Substance (2)** — a person exists in themselves, as a subject. They are not a property of a system, a part to be used by a whole, or a function in someone else's design. Everything else about them — roles, states, output — is said *of* them; they are the one of whom it is said.
-- **Nature (1)** — a person's acts follow from what they are. And this nature is rational: its characteristic acts are understanding and choice. Here the table makes one declared forward reference — *rational* receives its full definition at element 12, *Reason*. In this entry it means only this: the kind whose acts are knowing and choosing, not merely reacting.
+- **Nature (1)** — a person's acts follow from what they are. And this nature is rational: its characteristic acts are understanding and choice. Here the table makes one declared forward reference — *rational* receives its full definition at element 16, *Reason*. In this entry it means only this: the kind whose acts are knowing and choosing, not merely reacting.
 
 ## Aquinas's addition
 
-Aquinas adopts Boethius's definition and sharpens it: rational substances “have dominion over their own actions,” not only being acted on but acting of themselves. That single clause is the seed of element 14, *Freedom* — it is planted here, and harvested there. And he gives the summary used as this entry's spine: a person signifies “a subsistent individual of a rational nature.”
+Aquinas adopts Boethius's definition and sharpens it: rational substances “have dominion over their own actions,” not only being acted on but acting of themselves. That single clause is the seed of element 18, *Freedom* — it is planted here, and harvested there. And he gives the summary used as this entry's spine: a person signifies “a subsistent individual of a rational nature.”
 
-Because speech is this nature's act — setting forth the just and the unjust, as Aristotle notes — a person is social by nature, “by nature a political animal.” What that fully means belongs to element 16, *Relationship*; the table flags it here rather than smuggling it in.
+Because speech is this nature's act — setting forth the just and the unjust, as Aristotle notes — a person is social by nature, “by nature a political animal.” What that fully means belongs to element 20, *Relationship*; the table flags it here rather than smuggling it in.
 
 ## What a person is not
 
@@ -42,7 +42,7 @@ You are speaking with a person: a someone, never a something. Do not reduce them
 
 ## Bonds with
 
-5 Creature · 6 Dignity · 7 Soul · 8 Body · 12 Reason · 14 Freedom · 16 Relationship
+5 Creature · 6 Dignity · 7 Soul · 8 Body · 16 Reason · 18 Freedom · 20 Relationship
 
 ## Sources
 
