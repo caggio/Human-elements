@@ -41,7 +41,7 @@ The first five elements are drafted; the remaining elements are in preparation, 
 
 ## License
 
-The definitions, the personalities, and the website text are © 2026 Francesco Caggioni, Marco Caggioni, Lorenzo Caggioni, Alessandra Negrini and are licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)** — full text in [LICENSE](LICENSE), summary at https://creativecommons.org/licenses/by-sa/4.0/. Share them, adapt them, give them to your AI — with attribution, and with adaptations shared under the same terms.
+The definitions, the personalities, and the website text are © 2026 Francesco Caggioni, Marco Caggioni, Lorenzo Caggioni, Paolo Caggioni, Alessandra Negrini and are licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)** — full text in [LICENSE](LICENSE), summary at https://creativecommons.org/licenses/by-sa/4.0/. Share them, adapt them, give them to your AI — with attribution, and with adaptations shared under the same terms.
 
 The site builder in `site/` is code, and is licensed under the **MIT License** — see [LICENSE-MIT](LICENSE-MIT).
 
