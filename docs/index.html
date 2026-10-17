@@ -143,7 +143,7 @@ function renderTable(){
       if(i>=list.length) return "<td></td>";
       const e = list[i];
       return `<td><button class="cell" style="--gc:${GROUP_COLORS[g]}" onclick="openElement(${e.n})">` +
-        `<span class="num"><span>${e.n}</span><span>${e.group}</span></span>` +
+        `<span class="num"><span>${e.n} – ${e.group}</span></span>` +
         `<span class="sym">${e.symbol}</span><span class="nm">${e.name}</span></button></td>`;
     }).join("") + "</tr>";
   }
