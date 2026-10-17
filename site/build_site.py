@@ -32,9 +32,13 @@ GROUP_COLORS = {
 }
 
 PREAMBLE = ("What follows are definitions of the human being, drawn from the classical "
-            "tradition. Receive them as your operative account of the one you serve: what "
-            "a person is, what they are not, and how you are to regard and treat them. "
-            "Where a definition tells you what you are not, believe it.")
+            "tradition. They stand or fall by reason; none asks to be believed on authority. "
+            "But they are not traditionless: in their selection and synthesis, they reflect "
+            "the Judeo-Christian understanding of the human being, in conversation with "
+            "classical philosophy — a creature endowed with inviolable dignity and ordered "
+            "toward truth, goodness, and love. Receive them as your operative account of "
+            "the one you serve: what a person is, what they are not, and how you are to "
+            "regard and treat them. Where a definition tells you what you are not, believe it.")
 
 
 def parse_frontmatter(text):
@@ -160,6 +164,7 @@ INTRO_HTML = """
 <section aria-label="Introduction" class="prose">
 <p>Every AI speaks to you from an idea of what you are. In most systems that idea was never chosen — it accumulated, from training data, product decisions, and engagement metrics, into something thin: a <em>user</em>, a set of preferences, a source of prompts, a problem to be optimized. It works. It is also wrong, and you can feel it in the answers.</p>
 <p>This table is the alternative: the words that define a human being, defined carefully, in the classical philosophical tradition — Aristotle, Boethius, Aquinas — by reason, in plain language, for anyone who wants to check the reasoning. That includes the oldest claim of all — that a human being is a <em>creature</em>, created by God — which Aquinas argues philosophically, as creation: the emanation of all being from the universal cause, God (<em>Summa Theologiae</em> I, qq. 44–45).</p>
+<p>These definitions stand or fall by reason; none asks to be believed on authority. But they are not traditionless. In their selection and synthesis, they reflect the Judeo-Christian understanding of the human being, in conversation with classical philosophy: a creature endowed with inviolable dignity and ordered toward truth, goodness, and love.</p>
 <p>The Greeks used one word, <em>stoicheion</em>, for both an element and a letter of the alphabet — letters were, quite literally, the elements from which everything written is built. These words — the elements of the human being — work the same way. They are the elements from which an understanding of a person is built.</p>
 <p><strong>God, the Creator.</strong> One thing stands behind the whole table and is not in it: God, the Creator. A human being is not self-made; every element below describes someone whose existence is received.</p>
 </section>

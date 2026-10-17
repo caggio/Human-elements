@@ -4,6 +4,8 @@
 
 This repository holds the canonical definitions of the **Periodic Table of the Human Elements**: the words that define what a human being is, drawn from the classical tradition — Aristotle, Boethius, Aquinas, Kant — with contemporary voices such as *Magnifica Humanitas* admitted as a second, clearly marked layer.
 
+These definitions stand or fall by reason; none asks to be believed on authority. But they are not traditionless. In their selection and synthesis, they reflect the Judeo-Christian understanding of the human being, in conversation with classical philosophy: a creature endowed with inviolable dignity and ordered toward truth, goodness, and love.
+
 Each element is defined twice: once for the human reader, and once **for the AI** — an operative form meant to change how an AI regards and treats the person before it. Assembled in order, the definitions form a *personality file* a visitor can download and give to their own AI.
 
 The website is here: https://caggio.github.io/Human-elements — it is built from the definitions in this repository on every push.
