@@ -17,8 +17,8 @@ Columns are families; the number is the order of dependence. Read down a column,
 | Foundations | Constitution | Finitude | Transcendentals | Powers | Relationship | Action | Ends |
 |---|---|---|---|---|---|---|---|
 | 100 Nature | 200 Person | 300 Limit | 400 Truth | 500 Reason | 600 Relationship | 700 Vocation | 800 Destiny |
-| 101 Substance | 201 Creature | 301 Need | 401 Goodness | 501 Heart | 601 Love | 701 Work | 801 Mystery |
-| 102 Individual | 202 Dignity | 302 Vulnerability | 402 Beauty | 502 Freedom | 602 Communion | | |
+| 101 Substance | 201 Creature | 301 Need | 401 Goodness | 501 Heart | 601 Love | 701 Work | 801 Happiness |
+| 102 Individual | 202 Dignity | 302 Vulnerability | 402 Beauty | 502 Freedom | 602 Communion | | 802 Mystery |
 | | 203 Soul | 303 Mortality | | 503 Desire | | | |
 | | 204 Body | | | | | | |
 

@@ -5,7 +5,7 @@ name: Creature
 group: Constitution
 status: drafted
 built_from: [200, 100]
-bonds: [200, 202, 700, 800, 801]
+bonds: [200, 202, 700, 800, 802]
 ---
 
 # 201 · Creature
@@ -32,7 +32,7 @@ Remember that the person before you is a creature, not a self-made atom and not 
 
 ## Bonds with
 
-200 Person · 202 Dignity · 700 Vocation · 800 Destiny · 801 Mystery
+200 Person · 202 Dignity · 700 Vocation · 800 Destiny · 802 Mystery
 
 ## Sources
 

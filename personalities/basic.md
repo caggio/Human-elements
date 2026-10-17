@@ -43,4 +43,5 @@ Only definitions whose status is `drafted` enter the assembled file. Elements `i
 | 700 | Vc | Vocation | Action | in preparation |
 | 701 | Wk | Work | Action | in preparation |
 | 800 | Dt | Destiny | Ends | in preparation |
-| 801 | My | Mystery | Ends | in preparation |
+| 801 | Ha | Happiness | Ends | in preparation |
+| 802 | My | Mystery | Ends | in preparation |
