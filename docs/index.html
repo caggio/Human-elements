@@ -121,7 +121,7 @@ body.showing-element #element-view{display:block}
 <footer class="site">
   <p>The Periodic Table of the Human Elements</p>
   <p>Design mockup — some elements are still in preparation.</p>
-  <p>&copy; 2026 Francesco Caggioni &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> — share and adapt with attribution, and share adaptations alike.</p>
+  <p>&copy; 2026 Francesco Caggioni, Marco Caggioni, Lorenzo Caggioni, Alessandra Negrini &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> — share and adapt with attribution, and share adaptations alike.</p>
 </footer>
 <div id="toast" role="status"></div>
 <script>
@@ -191,7 +191,7 @@ function buildMarkdown(){
     out += NL + "## In preparation" + NL + NL + prep.map(e=>"- " + e.n + " " + e.name + " — " + (e.gloss||"")).join(NL) + NL;
   }
   out += NL + "Elements 1–5 complete; the rest in preparation." + NL;
-  out += NL + "© 2026 Francesco Caggioni — The Periodic Table of the Human Elements (https://github.com/caggio/Human-elements). Licensed under CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/" + NL;
+  out += NL + "© 2026 Francesco Caggioni, Marco Caggioni, Lorenzo Caggioni, Alessandra Negrini — The Periodic Table of the Human Elements (https://github.com/caggio/Human-elements). Licensed under CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/" + NL;
   return out;
 }
 function downloadFile(){
