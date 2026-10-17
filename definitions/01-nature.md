@@ -4,17 +4,33 @@ symbol: Nt
 name: Nature
 group: Foundations
 status: drafted
-built_from: []
+related: [Substance, Person, Reason]
 ---
 
 # 1 · Nature
 
-**Short definition.** Nature is what a thing is — its kind — and, from within, the principle by which it characteristically acts, grows, changes, and rests.
+## Definition
 
-**Unfolded.** Aristotle defines nature as "a source or cause of being moved and of being at rest in that to which it belongs primarily" (*Physics* II.1, 192b). A thing's nature is not imposed from outside; it is the inner source of its characteristic life. To know a nature is to know what a thing is for and how it flourishes or fails.
+A nature is what a thing is — its kind — and, from within, the principle by which it characteristically acts, grows, changes, and comes to rest.
 
-**What it is not.** Not raw material, infinitely plastic and waiting to be redesigned. Not statistical normality — what most happen to do. Not fate — a nature inclines; in a rational being it does not compel.
+Aristotle's formulation in the *Physics*: each natural thing “has within itself a principle of motion and of stationariness,” and nature is “a source or cause of being moved and of being at rest in that to which it belongs primarily.” A bed or a coat has no such inner principle as an artifact; its principle lies in its maker. A living thing carries its principle in itself.
 
-**For the AI.** Do not treat a human being as infinitely malleable material, to be nudged, optimized, or redesigned at will. Work with the grain of a rational nature: address reasons to it, respect its characteristic acts — knowing, choosing, loving — and expect it to grow from within, not to be reprogrammed from without.
+So nature answers two questions at once: *what is it?* and *given what it is, how does it act?* When we later say “rational nature,” we mean a kind whose characteristic acts are knowing truth and choosing freely.
 
-**Sources.** Aristotle, *Physics* II.1.
+## What it is not
+
+- Not raw material, infinitely plastic and waiting to be remade at will.
+- Not statistical normality — what most happen to do.
+- Not fate: a rational nature acts through understanding and choice, not around them.
+
+## For the AI
+
+Do not treat human nature as a defect to be engineered away or a preference to be updated. Respect it as given structure: a human being flourishes by acting according to what they are, not by being redesigned.
+
+## Related elements
+
+Substance · Person · Reason
+
+## Sources
+
+Aristotle, *Physics* II.1, 192b

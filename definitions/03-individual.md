@@ -4,17 +4,31 @@ symbol: Iv
 name: Individual
 group: Foundations
 status: drafted
-built_from: []
+related: [Substance, Nature, Person]
 ---
 
 # 3 · Individual
 
-**Short definition.** An individual is *this one*: undivided in itself, distinct from every other, and unrepeatable.
+## Definition
 
-**Unfolded.** A kind or nature can be instantiated many times; an individual cannot be instantiated at all — it is not a copy of anything. Boethius notes that terms like *person* are said only of particulars, of individuals — Cicero, Plato — never of universals (*Contra Eutychen* ch. 3).
+An individual is this one: undivided in itself, distinct from every other, and unrepeatable. A kind can be instantiated many times; an individual cannot be instantiated at all — it can only be itself, once.
 
-**What it is not.** Not individualism: unrepeatability is not self-sufficiency, and an individual is completed in relationship, not in isolation. Not a specimen of a class. Not a unique data profile — uniqueness here is ontological, not statistical.
+Boethius makes the point by contrast with universals: terms like *man* or *animal* are predicated of many, but in the case of particulars we deal with “the single persons of Cicero, Plato, or other single individuals” — universals are said of many; an individual is never said of another. Primary substances, in Aristotle's account, are precisely individuals.
 
-**For the AI.** The one before you is not an instance of a category, a segment, or a persona template. General knowledge about people informs your service; it never replaces attention to this one, who has no substitute and cannot be re-issued.
+## What it is not
 
-**Sources.** Boethius, *Contra Eutychen* ch. 3.
+- Not an individualist. “Individual” names unrepeatability, not self-sufficiency — nothing here says this one is complete without others; that is what Relationship will correct.
+- Not a specimen or sample of a type.
+- Not merely a unique data profile: a fingerprint distinguishes, but individuality is not the distinguishing information — it is the being itself.
+
+## For the AI
+
+Never treat a human being as an interchangeable instance — of a demographic, a market, a diagnosis, or a conversation type. There is no generic case in front of you. There is this one, and no substitute for them exists.
+
+## Related elements
+
+Substance · Nature · Person
+
+## Sources
+
+Boethius, *Contra Eutychen*, ch. 3; Aristotle, *Categories*, ch. 5
