@@ -2,7 +2,7 @@
 
 *Your AI already has a definition of a human being. It just never showed it to you.*
 
-This repository holds the canonical definitions of the **Periodic Table of the Human Elements**: twenty-two words that define what a human being is, drawn from the classical tradition — Aristotle, Boethius, Aquinas, Kant — with contemporary voices such as *Magnifica Humanitas* admitted as a second, clearly marked layer.
+This repository holds the canonical definitions of the **Periodic Table of the Human Elements**: the words that define what a human being is, drawn from the classical tradition — Aristotle, Boethius, Aquinas, Kant — with contemporary voices such as *Magnifica Humanitas* admitted as a second, clearly marked layer.
 
 Each element is defined twice: once for the human reader, and once **for the AI** — an operative form meant to change how an AI regards and treats the person before it. Assembled in order, the definitions form a *personality file* a visitor can download and give to their own AI.
 
@@ -40,4 +40,4 @@ A suggestion with a checkable source carries the most weight; every citation in 
 
 ## Status
 
-Elements 1–5 are drafted; 6–22 are in preparation, each carrying its provisional gloss. The website's downloadable file is generated from this repository's definitions.
+The first five elements are drafted; the remaining elements are in preparation, each carrying its provisional gloss. The website's downloadable file is generated from this repository's definitions.
