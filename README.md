@@ -16,17 +16,17 @@ Columns are families; the number is the order of dependence. Read down a column,
 
 | Foundations | Constitution | Finitude | Transcendentals | Powers | Relationship | Action | Ends |
 |---|---|---|---|---|---|---|---|
-| 1 Nature | 4 Person | 9 Limit | 13 Truth | 16 Reason | 20 Relationship | 23 Vocation | 25 Destiny |
-| 2 Substance | 5 Creature | 10 Need | 14 Goodness | 17 Heart | 21 Love | 24 Work | 26 Mystery |
-| 3 Individual | 6 Dignity | 11 Vulnerability | 15 Beauty | 18 Freedom | 22 Communion | | |
-| | 7 Soul | 12 Mortality | | 19 Desire | | | |
-| | 8 Body | | | | | | |
+| 100 Nature | 200 Person | 300 Limit | 400 Truth | 500 Reason | 600 Relationship | 700 Vocation | 800 Destiny |
+| 101 Substance | 201 Creature | 301 Need | 401 Goodness | 501 Heart | 601 Love | 701 Work | 801 Mystery |
+| 102 Individual | 202 Dignity | 302 Vulnerability | 402 Beauty | 502 Freedom | 602 Communion | | |
+| | 203 Soul | 303 Mortality | | 503 Desire | | | |
+| | 204 Body | | | | | | |
 
 God is not an element of this table: He is named as Creator in the framing — its source, not one of its members.
 
 ## Repository structure
 
-- `definitions/` — one file per element (`04-person.md`), the single source of truth. Frontmatter carries number, symbol, group, status, what the entry is built from, and its bonds; the body follows the house template: short definition, the definition unfolded, what it is not, *For the AI*, bonds, sources.
+- `definitions/` — one file per element (`200-person.md`), the single source of truth. Frontmatter carries number, symbol, group, status, what the entry is built from, and its bonds; the body follows the house template: short definition, the definition unfolded, what it is not, *For the AI*, bonds, sources.
 - `personalities/` — named assemblies of the definitions. `basic.md` is the starting personality: the whole table, in order. Future personalities may select or override, but never rewrite the canon in place.
 
 ## Editorial model

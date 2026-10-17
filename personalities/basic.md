@@ -18,29 +18,29 @@ Only definitions whose status is `drafted` enter the assembled file. Elements `i
 
 | No. | Symbol | Name | Group | Status |
 |----:|:------:|------|-------|--------|
-| 1 | Nt | Nature | Foundations | drafted |
-| 2 | Sb | Substance | Foundations | drafted |
-| 3 | Iv | Individual | Foundations | drafted |
-| 4 | Pe | Person | Constitution | drafted |
-| 5 | Cr | Creature | Constitution | drafted |
-| 6 | Dg | Dignity | Constitution | in preparation |
-| 7 | So | Soul | Constitution | in preparation |
-| 8 | Bd | Body | Constitution | in preparation |
-| 9 | Lt | Limit | Finitude | in preparation |
-| 10 | Nd | Need | Finitude | in preparation |
-| 11 | Vu | Vulnerability | Finitude | in preparation |
-| 12 | Mt | Mortality | Finitude | in preparation |
-| 13 | Tr | Truth | Transcendentals | in preparation |
-| 14 | Gd | Goodness | Transcendentals | in preparation |
-| 15 | Be | Beauty | Transcendentals | in preparation |
-| 16 | Re | Reason | Powers | in preparation |
-| 17 | Ht | Heart | Powers | in preparation |
-| 18 | Fr | Freedom | Powers | in preparation |
-| 19 | Ds | Desire | Powers | in preparation |
-| 20 | Rl | Relationship | Relationship | in preparation |
-| 21 | Lv | Love | Relationship | in preparation |
-| 22 | Cm | Communion | Relationship | in preparation |
-| 23 | Vc | Vocation | Action | in preparation |
-| 24 | Wk | Work | Action | in preparation |
-| 25 | Dt | Destiny | Ends | in preparation |
-| 26 | My | Mystery | Ends | in preparation |
+| 100 | Nt | Nature | Foundations | drafted |
+| 101 | Sb | Substance | Foundations | drafted |
+| 102 | Iv | Individual | Foundations | drafted |
+| 200 | Pe | Person | Constitution | drafted |
+| 201 | Cr | Creature | Constitution | drafted |
+| 202 | Dg | Dignity | Constitution | in preparation |
+| 203 | So | Soul | Constitution | in preparation |
+| 204 | Bd | Body | Constitution | in preparation |
+| 300 | Lt | Limit | Finitude | in preparation |
+| 301 | Nd | Need | Finitude | in preparation |
+| 302 | Vu | Vulnerability | Finitude | in preparation |
+| 303 | Mt | Mortality | Finitude | in preparation |
+| 400 | Tr | Truth | Transcendentals | in preparation |
+| 401 | Gd | Goodness | Transcendentals | in preparation |
+| 402 | Be | Beauty | Transcendentals | in preparation |
+| 500 | Re | Reason | Powers | in preparation |
+| 501 | Ht | Heart | Powers | in preparation |
+| 502 | Fr | Freedom | Powers | in preparation |
+| 503 | Ds | Desire | Powers | in preparation |
+| 600 | Rl | Relationship | Relationship | in preparation |
+| 601 | Lv | Love | Relationship | in preparation |
+| 602 | Cm | Communion | Relationship | in preparation |
+| 700 | Vc | Vocation | Action | in preparation |
+| 701 | Wk | Work | Action | in preparation |
+| 800 | Dt | Destiny | Ends | in preparation |
+| 801 | My | Mystery | Ends | in preparation |

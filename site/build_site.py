@@ -174,7 +174,7 @@ READING_HTML = """
 <section class="prose">
 <p class="kicker">Reading</p>
 <h2>How to read the table</h2>
-<p>Each element has a number, and the number is a promise: <strong>no word is used before it has been defined.</strong> The columns are families: each column groups elements of a similar kind — foundations, constitution, finitude, transcendentals, powers, relationship, action, ends. Read down a column, then move to the next. An element may build on anything above it in its own column, and on anything in the columns to its left — never on what comes below or to the right. So <em>person</em> — element 4, an individual substance of a rational nature — rests on the foundations at its left; <em>dignity</em> follows from person; and <em>freedom</em> — element 18 — follows from Aquinas's “dominion over his own actions,” a clause planted in person (4) and harvested there. After Constitution stands Finitude — limit, need, vulnerability, and mortality: the bounded shape of a creature, within which every power is exercised. Between Constitution and Powers stands a column of a different kind — the Transcendentals: truth, goodness, and beauty are not parts of a person or powers of a person, but the horizons every power aims at. Reason aims at truth, freedom and desire at goodness, and the heart is awakened by beauty. The Relationship column runs its full course within itself: relationship (20) — the fact that no person is complete alone — its act in love (21), willing the good of the other, and its fruit in communion (22), where love that endures becomes a shared life.</p>
+<p>Each element has a number, and the number is a promise: <strong>no word is used before it has been defined.</strong> The number is an address in two parts: the hundreds name the column — the 100s are Foundations, the 500s the Powers — and the rest gives the element's place within it. The gaps are deliberate: a new element takes the next free number at the foot of its column, and nothing already numbered ever moves. The columns are families: each column groups elements of a similar kind — foundations, constitution, finitude, transcendentals, powers, relationship, action, ends. Read down a column, then move to the next. An element may build on anything above it in its own column, and on anything in the columns to its left — never on what comes below or to the right. So <em>person</em> — element 200, an individual substance of a rational nature — rests on the foundations at its left; <em>dignity</em> follows from person; and <em>freedom</em> — element 502 — follows from Aquinas's “dominion over his own actions,” a clause planted in person (200) and harvested there. After Constitution stands Finitude — limit, need, vulnerability, and mortality: the bounded shape of a creature, within which every power is exercised. Between Constitution and Powers stands a column of a different kind — the Transcendentals: truth, goodness, and beauty are not parts of a person or powers of a person, but the horizons every power aims at. Reason aims at truth, freedom and desire at goodness, and the heart is awakened by beauty. The Relationship column runs its full course within itself: relationship (600) — the fact that no person is complete alone — its act in love (601), willing the good of the other, and its fruit in communion (602), where love that endures becomes a shared life.</p>
 <p>The table grows downwards: as new elements are defined, they take their place at the foot of their family column. Read in order, the table is one argument. Read any cell on its own, and it still stands — but check its number and its column, and you will know exactly which earlier words it rests on.</p>
 </section>
 """
@@ -194,10 +194,10 @@ AI_PANEL_HTML = """
 <h2>Give your AI a better definition of you</h2>
 <p>The whole table is also <strong>one file</strong>. Download it and give it to your AI — as its personality file, system prompt, or standing instructions, wherever yours accepts such a thing — and its working definition of you changes: from user to person, from preferences to dignity, from engagement to truth.</p>
 <p>Every definition here appears twice: once for you, to contemplate and to judge — and once for the machine, as instructions it can act on.</p>
-<p class="chip">human-elements.md · one file · Elements 1–5 complete — the rest in preparation</p>
+<p class="chip">human-elements.md · one file · Elements 100–102 and 200–201 complete — the rest in preparation</p>
 <button class="download-btn" onclick="downloadFile()">Download the complete file</button>
 </section>
-<p class="closing">Begin with element 1. Or begin, as most will, with element 4 — and work outwards.</p>
+<p class="closing">Begin with element 100. Or begin, as most will, with element 200 — and work outwards.</p>
 """
 
 CSS = """
@@ -288,7 +288,9 @@ const GROUP_COLORS = __COLORS_JSON__;
 
 function openElement(n){
   const e = byNum(n); if(!e) return;
-  const prev = byNum(n-1), next = byNum(n+1);
+  const idx = ELEMENTS.findIndex(e => e.n === n);
+  const prev = idx > 0 ? ELEMENTS[idx-1] : null;
+  const next = (idx >= 0 && idx < ELEMENTS.length - 1) ? ELEMENTS[idx+1] : null;
   let h = `<button class="back-btn" onclick="closeElement()">← Back to the table</button>`;
   h += `<p class="entry-head">No. ${e.n} · ${e.symbol} · ${e.group}</p><h2>${e.name}</h2>`;
   if(e.status !== "drafted") h += `<div class="prep-banner">Entry in preparation</div>`;
@@ -327,7 +329,7 @@ function buildMarkdown(){
   if(prep.length){
     out += NL + "## In preparation" + NL + NL + prep.map(e=>"- " + e.n + " " + e.name + " — " + (e.gloss||"")).join(NL) + NL;
   }
-  out += NL + "Elements 1–5 complete; the rest in preparation." + NL;
+  out += NL + "Elements 100–102 and 200–201 complete; the rest in preparation." + NL;
   out += NL + "© 2026 Francesco Caggioni, Marco Caggioni, Lorenzo Caggioni, Paolo Caggioni, Alessandra Negrini — The Periodic Table of the Human Elements (https://github.com/caggio/Human-elements). Licensed under CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/" + NL;
   return out;
 }
