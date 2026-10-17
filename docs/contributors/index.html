@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contributors — The Periodic Table of the Human Elements</title>
+<style>
+:root{
+  --bg:#faf7f0; --surface:#fffdf8; --text:#2b2620; --muted:#7d7466; --border:#ddd3bf;
+  --accent:#4a4136;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#171512; --surface:#201d19; --text:#ece5d8; --muted:#a29785; --border:#3d372e; --accent:#e6dcc8; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+header.site{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.8rem;padding:.6rem 1rem;z-index:5}
+.mark{border:2px solid var(--accent);color:var(--accent);font-size:1.3rem;padding:.15rem .45rem;font-weight:bold}
+.wordmark{font-variant:small-caps;letter-spacing:.04em}
+header.site .spacer{flex:1}
+.download-btn{background:var(--accent);color:var(--bg);border:none;padding:.6rem 1rem;font-family:ui-monospace,Menlo,monospace;font-size:.9rem;cursor:pointer;border-radius:3px}
+main{max-width:1100px;margin:0 auto;padding:1rem}
+.hero{text-align:left;padding:2rem 0 1rem}
+.overline{font-family:ui-monospace,Menlo,monospace;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);font-size:.8rem}
+h1{font-size:2.4rem;margin:.4rem 0}
+.hook{font-size:1.25rem;max-width:44rem}
+.prose{max-width:46rem;margin:2rem 0}
+.kicker{font-family:ui-monospace,Menlo,monospace;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);font-size:.78rem;margin-bottom:.2rem}
+h2{margin:.2rem 0 .8rem}
+blockquote{font-size:1.4rem;font-style:italic;border-left:3px solid var(--accent);margin:1rem 0;padding:.2rem 0 .2rem 1rem}
+.chip{font-family:ui-monospace,Menlo,monospace;font-size:.85rem;color:var(--muted)}
+.closing{font-style:italic;margin:2rem 0}
+footer.site{border-top:1px solid var(--border);color:var(--muted);font-family:ui-monospace,Menlo,monospace;font-size:.85rem;padding:1rem;max-width:1100px;margin:2rem auto 0}
+footer.site a{color:inherit}
+main a{color:var(--accent)}
+.table-wrap{overflow-x:auto;border:1px solid var(--border);background:var(--surface);padding:1rem}
+table{border-collapse:separate;border-spacing:.5rem}
+th{font-family:ui-monospace,Menlo,monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;text-align:left;vertical-align:top}
+td{vertical-align:top}
+.cell{display:block;width:9.2rem;text-align:left;background:var(--bg);border:1px solid var(--border);border-top:4px solid var(--gc,#999);padding:.45rem .55rem;cursor:pointer;font-family:inherit;color:var(--text)}
+.cell:hover{border-color:var(--accent)}
+.cell .num{font-family:ui-monospace,Menlo,monospace;font-size:.72rem;color:var(--muted);display:flex;justify-content:space-between}
+.cell .sym{font-size:1.5rem;font-weight:bold;display:block}
+.cell .nm{font-size:.92rem}
+.caption{color:var(--muted);font-size:.9rem;font-style:italic}
+#element-view{display:none}
+body.showing-element #home-view{display:none}
+body.showing-element #element-view{display:block}
+.entry-head{font-family:ui-monospace,Menlo,monospace;color:var(--muted);font-size:.85rem;letter-spacing:.06em}
+.entry h2{font-size:2rem;margin:.3rem 0 1rem}
+.entry h3{font-variant:small-caps;letter-spacing:.05em;margin:1.4rem 0 .4rem}
+.prep-banner{border:1px dashed var(--border);padding:.6rem .8rem;color:var(--muted);font-style:italic;margin:.8rem 0}
+.entry-nav{display:flex;justify-content:space-between;margin:2rem 0}
+.entry-nav button,.back-btn{background:none;border:1px solid var(--border);color:var(--text);padding:.5rem .9rem;cursor:pointer;font-family:ui-monospace,Menlo,monospace;border-radius:3px}
+.suggest{border-top:1px solid var(--border);margin-top:2rem;padding-top:1rem;max-width:46rem}
+.suggest h3{font-variant:small-caps}
+.suggest label{display:block;margin:.8rem 0 .3rem;font-size:.95rem}
+.suggest select,.suggest textarea,.suggest input{width:100%;padding:.5rem;background:var(--surface);border:1px solid var(--border);color:var(--text);font-family:inherit;font-size:1rem}
+.suggest textarea{min-height:5rem}
+.suggest .row{display:flex;gap:1rem;flex-wrap:wrap}
+.suggest .row>div{flex:1;min-width:12rem}
+.suggest button{background:var(--accent);color:var(--bg);border:none;padding:.6rem 1.1rem;cursor:pointer;font-family:ui-monospace,Menlo,monospace;border-radius:3px;margin-top:1rem}
+.suggest a.pr-btn{display:inline-block;background:var(--accent);color:var(--bg);padding:.6rem 1.1rem;text-decoration:none;font-family:ui-monospace,Menlo,monospace;border-radius:3px;margin-top:.6rem}
+.suggest .note{border:1px dashed var(--border);padding:.6rem .8rem;margin-top:1rem}
+#toast{position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--accent);color:var(--bg);padding:.5rem 1rem;border-radius:3px;font-family:ui-monospace,Menlo,monospace;font-size:.85rem;display:none}
+</style>
+</head>
+<body>
+<header class="site">
+  <span class="mark">Pe</span>
+  <span class="wordmark">The Periodic Table of the Human Elements</span>
+  <span class="spacer"></span>
+  <a class="download-btn" href="../" style="text-decoration:none">The table</a>
+</header>
+<main>
+<section class="prose">
+<p class="kicker">Contributors</p>
+<h2>Contributors &amp; copyright</h2>
+<p>The Periodic Table of the Human Elements is the work of its contributors. The copyright in the definitions, the personalities, and the text of this site is held by:</p>
+<ul>
+<li>Francesco Caggioni</li>
+<li>Marco Caggioni</li>
+<li>Lorenzo Caggioni</li>
+<li>Paolo Caggioni</li>
+<li>Alessandra Negrini</li>
+</ul>
+<p>The definitions, the personalities, and the website text are licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)</a> — share and adapt with attribution, and share adaptations alike; the full legal text is the project's <a href="https://github.com/caggio/Human-elements/blob/main/LICENSE">LICENSE</a>. The site builder code is licensed under the <a href="https://github.com/caggio/Human-elements/blob/main/LICENSE-MIT">MIT License</a>.</p>
+<p>This table has an editor. Suggestions are made as pull requests in the project's <a href="https://github.com/caggio/Human-elements">GitHub repository</a>, and the definitions change only when the editor merges one.</p>
+<p><a href="../">&larr; Back to the table</a></p>
+</section>
+</main>
+<footer class="site">
+  <p>The Periodic Table of the Human Elements</p>
+  <p>Design mockup — some elements are still in preparation.</p>
+  <p>&copy; 2026 The Periodic Table of the Human Elements <a href="../contributors/">contributors</a> &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> — share and adapt with attribution, and share adaptations alike.</p>
+</footer>
+</body>
+</html>

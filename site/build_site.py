@@ -3,8 +3,9 @@
 
 Reads definitions/*.md (frontmatter + markdown body), personalities not needed
 at build time except the basic personality's preamble (embedded below, kept in
-sync with personalities/basic.md), and emits a single self-contained
-_site/index.html. Run from the repository root:  python3 site/build_site.py
+sync with personalities/basic.md), and emits a self-contained _site/index.html
+plus a contributors page at _site/contributors/index.html. Run from the
+repository root:  python3 site/build_site.py
 """
 import glob
 import html
@@ -222,6 +223,7 @@ blockquote{font-size:1.4rem;font-style:italic;border-left:3px solid var(--accent
 .closing{font-style:italic;margin:2rem 0}
 footer.site{border-top:1px solid var(--border);color:var(--muted);font-family:ui-monospace,Menlo,monospace;font-size:.85rem;padding:1rem;max-width:1100px;margin:2rem auto 0}
 footer.site a{color:inherit}
+main a{color:var(--accent)}
 .table-wrap{overflow-x:auto;border:1px solid var(--border);background:var(--surface);padding:1rem}
 table{border-collapse:separate;border-spacing:.5rem}
 th{font-family:ui-monospace,Menlo,monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;text-align:left;vertical-align:top}
@@ -337,6 +339,50 @@ renderTable();
 """
 
 
+HOLDERS = ["Francesco Caggioni", "Marco Caggioni", "Lorenzo Caggioni",
+           "Paolo Caggioni", "Alessandra Negrini"]
+
+
+def contributors_page():
+    names = "\n".join(f"<li>{n}</li>" for n in HOLDERS)
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contributors — The Periodic Table of the Human Elements</title>
+<style>{CSS}</style>
+</head>
+<body>
+<header class="site">
+  <span class="mark">Pe</span>
+  <span class="wordmark">The Periodic Table of the Human Elements</span>
+  <span class="spacer"></span>
+  <a class="download-btn" href="../" style="text-decoration:none">The table</a>
+</header>
+<main>
+<section class="prose">
+<p class="kicker">Contributors</p>
+<h2>Contributors &amp; copyright</h2>
+<p>The Periodic Table of the Human Elements is the work of its contributors. The copyright in the definitions, the personalities, and the text of this site is held by:</p>
+<ul>
+{names}
+</ul>
+<p>The definitions, the personalities, and the website text are licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)</a> — share and adapt with attribution, and share adaptations alike; the full legal text is the project's <a href="{REPO_URL}/blob/main/LICENSE">LICENSE</a>. The site builder code is licensed under the <a href="{REPO_URL}/blob/main/LICENSE-MIT">MIT License</a>.</p>
+<p>This table has an editor. Suggestions are made as pull requests in the project's <a href="{REPO_URL}">GitHub repository</a>, and the definitions change only when the editor merges one.</p>
+<p><a href="../">&larr; Back to the table</a></p>
+</section>
+</main>
+<footer class="site">
+  <p>The Periodic Table of the Human Elements</p>
+  <p>Design mockup — some elements are still in preparation.</p>
+  <p>&copy; 2026 The Periodic Table of the Human Elements <a href="../contributors/">contributors</a> &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> — share and adapt with attribution, and share adaptations alike.</p>
+</footer>
+</body>
+</html>
+"""
+
+
 def main():
     elements = load_elements()
     data = [{k: e[k] for k in ("file", "n", "symbol", "name", "group", "status", "html",
@@ -381,7 +427,7 @@ def main():
 <footer class="site">
   <p>The Periodic Table of the Human Elements</p>
   <p>Design mockup — some elements are still in preparation.</p>
-  <p>&copy; 2026 Francesco Caggioni, Marco Caggioni, Lorenzo Caggioni, Paolo Caggioni, Alessandra Negrini &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> — share and adapt with attribution, and share adaptations alike.</p>
+  <p>&copy; 2026 The Periodic Table of the Human Elements <a href="contributors/">contributors</a> &middot; Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> — share and adapt with attribution, and share adaptations alike.</p>
 </footer>
 <div id="toast" role="status"></div>
 <script>{js}</script>
@@ -391,6 +437,11 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(page, encoding="utf-8")
     print(f"Wrote {OUT} ({len(page)} bytes, {len(elements)} elements)")
+    contrib = ROOT / "_site" / "contributors" / "index.html"
+    contrib.parent.mkdir(parents=True, exist_ok=True)
+    cpage = contributors_page()
+    contrib.write_text(cpage, encoding="utf-8")
+    print(f"Wrote {contrib} ({len(cpage)} bytes)")
 
 
 if __name__ == "__main__":
