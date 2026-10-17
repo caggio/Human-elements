@@ -31,10 +31,7 @@ God is not an element of this table: He is named as Creator in the framing — i
 
 This table has an editor. The definitions are self-consistent by design: every load-bearing term used inside a definition is itself defined in the table, in one sense, everywhere; known exceptions (such as Person's forward reference to Reason) are declared inside the entry, never hidden.
 
-Suggestions are welcome two ways:
-
-- **Pull requests** against a definition file — a diff is the clearest suggestion there is. Nothing merges without the editor's hand.
-- **The suggestion box** on the website, for readers without a GitHub account.
+Suggestions are made one way: as **pull requests** against a definition file — a diff is the clearest suggestion there is. Nothing merges without the editor's hand. Each element page on the website links straight to its definition file, so a reader can go from reading a definition to proposing a change in a few clicks.
 
 A suggestion with a checkable source carries the most weight; every citation in the table is verified before it stands.
 
