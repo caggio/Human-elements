@@ -189,6 +189,7 @@ function buildMarkdown(){
     out += NL + "## In preparation" + NL + NL + prep.map(e=>"- " + e.n + " " + e.name + " — " + (e.gloss||"")).join(NL) + NL;
   }
   out += NL + "Elements 1–5 complete; the rest in preparation." + NL;
+  out += NL + "© 2026 Francesco Caggioni — The Periodic Table of the Human Elements (https://github.com/caggio/Human-elements). Licensed under CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/" + NL;
   return out;
 }
 function downloadFile(){

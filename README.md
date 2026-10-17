@@ -38,3 +38,11 @@ A suggestion with a checkable source carries the most weight; every citation in 
 ## Status
 
 The first five elements are drafted; the remaining elements are in preparation, each carrying its provisional gloss. The website's downloadable file is generated from this repository's definitions.
+
+## License
+
+The definitions, the personalities, and the website text are © 2026 Francesco Caggioni and are licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)** — full text in [LICENSE](LICENSE), summary at https://creativecommons.org/licenses/by-sa/4.0/. Share them, adapt them, give them to your AI — with attribution, and with adaptations shared under the same terms.
+
+The site builder in `site/` is code, and is licensed under the **MIT License** — see [LICENSE-MIT](LICENSE-MIT).
+
+By opening a pull request, you agree that your contribution is licensed under the same terms as the part of the project it touches.
