@@ -304,20 +304,21 @@ function suggestHtml(e){
 }
 
 function buildMarkdown(){
-  let out = "# The Periodic Table of the Human Elements — Basic Personality\n\n> " + PREAMBLE + "\n";
+  const NL = String.fromCharCode(10);
+  let out = "# The Periodic Table of the Human Elements — Basic Personality" + NL + NL + "> " + PREAMBLE + NL;
   for(const e of ELEMENTS){
     if(e.status !== "drafted") continue;
-    out += `\n## ${e.n}. ${e.name}\n\n${e.definition}\n`;
+    out += NL + "## " + e.n + ". " + e.name + NL + NL + e.definition + NL;
     if(e.notList && e.notList.length){
-      out += "\n**What it is not:**\n" + e.notList.map(x=>"- "+x).join("\n") + "\n";
+      out += NL + "**What it is not:**" + NL + e.notList.map(x=>"- "+x).join(NL) + NL;
     }
-    out += `\n**For the AI:** ${e.ai}\n\n*Sources: ${e.sources}*\n`;
+    out += NL + "**For the AI:** " + e.ai + NL + NL + "*Sources: " + e.sources + "*" + NL;
   }
   const prep = ELEMENTS.filter(e=>e.status!=="drafted");
   if(prep.length){
-    out += "\n## In preparation\n\n" + prep.map(e=>`- ${e.n} ${e.name} — ${e.gloss||""}`).join("\n") + "\n";
+    out += NL + "## In preparation" + NL + NL + prep.map(e=>"- " + e.n + " " + e.name + " — " + (e.gloss||"")).join(NL) + NL;
   }
-  out += "\nElements 1–5 complete; the rest in preparation.\n";
+  out += NL + "Elements 1–5 complete; the rest in preparation." + NL;
   return out;
 }
 function downloadFile(){

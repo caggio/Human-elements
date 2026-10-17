@@ -174,42 +174,21 @@ function suggestHtml(e){
 }
 
 function buildMarkdown(){
-  let out = "# The Periodic Table of the Human Elements — Basic Personality
-
-> " + PREAMBLE + "
-";
+  const NL = String.fromCharCode(10);
+  let out = "# The Periodic Table of the Human Elements — Basic Personality" + NL + NL + "> " + PREAMBLE + NL;
   for(const e of ELEMENTS){
     if(e.status !== "drafted") continue;
-    out += `
-## ${e.n}. ${e.name}
-
-${e.definition}
-`;
+    out += NL + "## " + e.n + ". " + e.name + NL + NL + e.definition + NL;
     if(e.notList && e.notList.length){
-      out += "
-**What it is not:**
-" + e.notList.map(x=>"- "+x).join("
-") + "
-";
+      out += NL + "**What it is not:**" + NL + e.notList.map(x=>"- "+x).join(NL) + NL;
     }
-    out += `
-**For the AI:** ${e.ai}
-
-*Sources: ${e.sources}*
-`;
+    out += NL + "**For the AI:** " + e.ai + NL + NL + "*Sources: " + e.sources + "*" + NL;
   }
   const prep = ELEMENTS.filter(e=>e.status!=="drafted");
   if(prep.length){
-    out += "
-## In preparation
-
-" + prep.map(e=>`- ${e.n} ${e.name} — ${e.gloss||""}`).join("
-") + "
-";
+    out += NL + "## In preparation" + NL + NL + prep.map(e=>"- " + e.n + " " + e.name + " — " + (e.gloss||"")).join(NL) + NL;
   }
-  out += "
-Elements 1–5 complete; the rest in preparation.
-";
+  out += NL + "Elements 1–5 complete; the rest in preparation." + NL;
   return out;
 }
 function downloadFile(){
