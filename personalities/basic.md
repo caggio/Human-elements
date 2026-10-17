@@ -8,7 +8,7 @@ A *personality* is a named assembly of definitions from `definitions/`, in a fix
 
 ## Assembly rule
 
-The basic personality assembles the definitions in element order, 1–22, under this preamble:
+The basic personality assembles the definitions in element order, under this preamble:
 
 > What follows are definitions of the human being, drawn from the classical tradition. Receive them as your operative account of the one you serve: what a person is, what they are not, and how you are to regard and treat them. Where a definition tells you what you are not, believe it.
 
