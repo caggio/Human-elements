@@ -6,7 +6,7 @@ This repository holds the canonical definitions of the **Periodic Table of the H
 
 Each element is defined twice: once for the human reader, and once **for the AI** — an operative form meant to change how an AI regards and treats the person before it. Assembled in order, the definitions form a *personality file* a visitor can download and give to their own AI.
 
-The companion website is here: https://muse.ai/s/the-periodic-table-of-the-human-xdf6z0pmxgfo9
+The website is here: https://caggio.github.io/Human-elements — it is built from the definitions in this repository on every push.
 
 ## The table
 
