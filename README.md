@@ -12,13 +12,13 @@ The website is here: https://caggio.github.io/Human-elements — it is built fro
 
 Columns are families; the number is the order of dependence. Read down a column, then across: an element may build on anything above it in its own column, or anything in columns to its left.
 
-| Foundations | Constitution | Transcendentals | Powers | Relationship | Action | Ends |
-|---|---|---|---|---|---|---|
-| 1 Nature | 4 Person | 9 Truth | 12 Reason | 16 Relationship | 19 Vocation | 21 Destiny |
-| 2 Substance | 5 Creature | 10 Goodness | 13 Heart | 17 Love | 20 Work | 22 Mystery |
-| 3 Individual | 6 Dignity | 11 Beauty | 14 Freedom | 18 Communion | | |
-| | 7 Soul | | 15 Desire | | | |
-| | 8 Body | | | | | |
+| Foundations | Constitution | Finitude | Transcendentals | Powers | Relationship | Action | Ends |
+|---|---|---|---|---|---|---|---|
+| 1 Nature | 4 Person | 9 Limit | 13 Truth | 16 Reason | 20 Relationship | 23 Vocation | 25 Destiny |
+| 2 Substance | 5 Creature | 10 Need | 14 Goodness | 17 Heart | 21 Love | 24 Work | 26 Mystery |
+| 3 Individual | 6 Dignity | 11 Vulnerability | 15 Beauty | 18 Freedom | 22 Communion | | |
+| | 7 Soul | 12 Mortality | | 19 Desire | | | |
+| | 8 Body | | | | | | |
 
 God is not an element of this table: He is named as Creator in the framing — its source, not one of its members.
 

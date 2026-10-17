@@ -17,11 +17,12 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "_site" / "index.html"
 REPO_URL = "https://github.com/caggio/Human-elements"
 
-GROUP_ORDER = ["Foundations", "Constitution", "Transcendentals", "Powers",
+GROUP_ORDER = ["Foundations", "Constitution", "Finitude", "Transcendentals", "Powers",
                "Relationship", "Action", "Ends"]
 GROUP_COLORS = {
     "Foundations": "#8a7f5c",
     "Constitution": "#7a6a53",
+    "Finitude": "#7a756c",
     "Transcendentals": "#8b84a8",
     "Powers": "#5f7a6a",
     "Relationship": "#4f7a7d",
@@ -167,7 +168,7 @@ READING_HTML = """
 <section class="prose">
 <p class="kicker">Reading</p>
 <h2>How to read the table</h2>
-<p>Each element has a number, and the number is a promise: <strong>no word is used before it has been defined.</strong> The columns are families: each column groups elements of a similar kind — foundations, constitution, transcendentals, powers, relationship, action, ends. Read down a column, then move to the next. An element may build on anything above it in its own column, and on anything in the columns to its left — never on what comes below or to the right. So <em>person</em> — element 4, an individual substance of a rational nature — rests on the foundations at its left; <em>dignity</em> follows from person; and <em>freedom</em> — element 14 — follows from Aquinas's “dominion over his own actions,” a clause planted in person (4) and harvested there. Between Constitution and Powers stands a column of a different kind — the Transcendentals: truth, goodness, and beauty are not parts of a person or powers of a person, but the horizons every power aims at. Reason aims at truth, freedom and desire at goodness, and the heart is awakened by beauty. The Relationship column runs its full course within itself: relationship (16) — the fact that no person is complete alone — its act in love (17), willing the good of the other, and its fruit in communion (18), where love that endures becomes a shared life.</p>
+<p>Each element has a number, and the number is a promise: <strong>no word is used before it has been defined.</strong> The columns are families: each column groups elements of a similar kind — foundations, constitution, finitude, transcendentals, powers, relationship, action, ends. Read down a column, then move to the next. An element may build on anything above it in its own column, and on anything in the columns to its left — never on what comes below or to the right. So <em>person</em> — element 4, an individual substance of a rational nature — rests on the foundations at its left; <em>dignity</em> follows from person; and <em>freedom</em> — element 18 — follows from Aquinas's “dominion over his own actions,” a clause planted in person (4) and harvested there. After Constitution stands Finitude — limit, need, vulnerability, and mortality: the bounded shape of a creature, within which every power is exercised. Between Constitution and Powers stands a column of a different kind — the Transcendentals: truth, goodness, and beauty are not parts of a person or powers of a person, but the horizons every power aims at. Reason aims at truth, freedom and desire at goodness, and the heart is awakened by beauty. The Relationship column runs its full course within itself: relationship (20) — the fact that no person is complete alone — its act in love (21), willing the good of the other, and its fruit in communion (22), where love that endures becomes a shared life.</p>
 <p>The table grows downwards: as new elements are defined, they take their place at the foot of their family column. Read in order, the table is one argument. Read any cell on its own, and it still stands — but check its number and its column, and you will know exactly which earlier words it rests on.</p>
 </section>
 """
