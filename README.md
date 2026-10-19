@@ -39,7 +39,7 @@ A suggestion with a checkable source carries the most weight; every citation in 
 
 ## Status
 
-The first five elements are drafted; the remaining elements are in preparation, each carrying its provisional gloss. The website's downloadable file is generated from this repository's definitions.
+Elements 100–102, 200–201 and 402 are drafted; the remaining elements are in preparation, each carrying its provisional gloss. The website's downloadable file is generated from this repository's definitions.
 
 ## License
 

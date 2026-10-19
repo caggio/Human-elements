@@ -32,7 +32,7 @@ Only definitions whose status is `drafted` enter the assembled file. Elements `i
 | 303 | Mt | Mortality | Finitude | in preparation |
 | 400 | Tr | Truth | Transcendentals | in preparation |
 | 401 | Gd | Goodness | Transcendentals | in preparation |
-| 402 | Be | Beauty | Transcendentals | in preparation |
+| 402 | Be | Beauty | Transcendentals | drafted |
 | 500 | Re | Reason | Powers | in preparation |
 | 501 | Ht | Heart | Powers | in preparation |
 | 502 | Fr | Freedom | Powers | in preparation |

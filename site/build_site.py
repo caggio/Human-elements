@@ -70,12 +70,15 @@ def md_inline(s):
 
 
 def md_to_html(body):
-    out, para, items = [], [], []
+    out, para, items, quote = [], [], [], []
 
     def flush():
         if items:
             out.append("<ul>" + "".join(f"<li>{md_inline(i)}</li>" for i in items) + "</ul>")
             items.clear()
+        if quote:
+            out.append("<blockquote>" + "<br>".join(md_inline(q) for q in quote) + "</blockquote>")
+            quote.clear()
         if para:
             out.append(f"<p>{md_inline(' '.join(para))}</p>")
             para.clear()
@@ -88,13 +91,17 @@ def md_to_html(body):
             flush()
             out.append(f"<h3>{md_inline(line[3:].strip())}</h3>")
         elif line.startswith("- "):
-            if para:
+            if para or quote:
                 flush()
             items.append(line[2:].strip())
+        elif line.startswith("> "):
+            if para or items:
+                flush()
+            quote.append(line[2:].strip())
         elif line.strip() == "":
             flush()
         else:
-            if items:
+            if items or quote:
                 flush()
             para.append(line.strip())
     flush()
@@ -194,7 +201,7 @@ AI_PANEL_HTML = """
 <h2>Give your AI a better definition of you</h2>
 <p>The whole table is also <strong>one file</strong>. Download it and give it to your AI — as its personality file, system prompt, or standing instructions, wherever yours accepts such a thing — and its working definition of you changes: from user to person, from preferences to dignity, from engagement to truth.</p>
 <p>Every definition here appears twice: once for you, to contemplate and to judge — and once for the machine, as instructions it can act on.</p>
-<p class="chip">human-elements.md · one file · Elements 100–102 and 200–201 complete — the rest in preparation</p>
+<p class="chip">human-elements.md · one file · Elements 100–102, 200–201 and 402 complete — the rest in preparation</p>
 <button class="download-btn" onclick="downloadFile()">Download the complete file</button>
 </section>
 <p class="closing">Begin with element 100. Or begin, as most will, with element 200 — and work outwards.</p>
@@ -329,7 +336,7 @@ function buildMarkdown(){
   if(prep.length){
     out += NL + "## In preparation" + NL + NL + prep.map(e=>"- " + e.n + " " + e.name + " — " + (e.gloss||"")).join(NL) + NL;
   }
-  out += NL + "Elements 100–102 and 200–201 complete; the rest in preparation." + NL;
+  out += NL + "Elements 100–102, 200–201 and 402 complete; the rest in preparation." + NL;
   out += NL + "© 2026 Francesco Caggioni, Marco Caggioni, Lorenzo Caggioni, Paolo Caggioni, Alessandra Negrini — The Periodic Table of the Human Elements (https://github.com/caggio/Human-elements). Licensed under CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/" + NL;
   return out;
 }
